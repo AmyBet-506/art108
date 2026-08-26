@@ -223,17 +223,21 @@
   <body>
     <div class="Dad">
 
-      <figure class="Folder1">
-          <img src="images/Icons/IconText1.png" alt="" onclick="openPopup('popup')">
-          <figcaption>Blog Post 1
-          </figcaption>
-       </figure>
+      <a href="pages/post-1.html">
+        <figure class="Folder1">
+            <img src="images/Icons/IconText1.png" alt="">
+            <figcaption>Blog Post 1
+            </figcaption>
+         </figure>
+      </a>
 <!--
+      <a href="posts/post-2.html">
         <figure class="Folder2">
-          <img src="images/Icons/IconText1.png" alt="" onclick="openPopup('popup2')">
+          <img src="images/Icons/IconText1.png" alt="">
           <figcaption>Blog Post 2
           </figcaption>
        </figure>
+      </a>
   </div>
 -->
   <div class="window" style="left: 3%; top: 147px">
@@ -252,71 +256,5 @@
     </div>
   </div>
 
-  <div class="popup" id="popup">
-    <div class="title-bar-pop"> 
-      <div class="title-bar-text-pop">Blog Post Aug 24</div>
-      <div class="title-bar-controls-pop">
-        <button aria-label="Minimize-pop"></button>
-        <button aria-label="Maximize-pop" ></button>
-        <button aria-label="Close-pop" onclick="closePopup('popup')" ></button>
-      </div>
-    </div>
-      <div class="popup-window-body">
-        <h1 style="color: #6e4749; text-align: center;">August 24 Blog
-          <br> Out Run 1986
-        </h1>
-        <h3 style="padding: 15px;">
-        When I was playing I pretty quickly realized that this game deceptively has a brake, but I always felt that slowing down pretty much at all guaranteed you would fail the first part of the race. The way depth was portrayed in this game made it rather difficult to plan ahead since I was going so fast and the horizon was not that far down the road. Another layer of difficulty was added when you would go up hills as the horizon would almost entirely disappear leaving you with nothing but the lane lines to guide you. Overall I do believe that the player was meant to primarily use the lane lines for steering since the environment and way of rendering depth made it very difficult to see ahead. 
-        <img src="images/crash.png" alt="">
-        <br>
-          Obviously I believe that the controls would be easier to use and understand if this were to be played on the original hardware, especially because the original hardware comes with pedals and a steering wheel. I think the experience of this game is worsened by emulation solely because it was intended to be played with completely different controls. What I found really fascinating about the game is that there are several endings and you can select which song would play in the background of the race. 
-          <img src="images/Out_Run.jpg" alt="">
-        </h3>
-     </div>
-    </div>
-
-    <div class="popup" id="popup2">
-    <div class="title-bar-pop"> 
-      <div class="title-bar-text-pop">Blog 2 placeholder</div>
-      <div class="title-bar-controls-pop">
-        <button aria-label="Minimize-pop"></button>
-        <button aria-label="Maximize-pop" ></button>
-        <button aria-label="Close-pop" onclick="closePopup('popup2')" ></button>
-      </div>
-    </div>
-      <div class="popup-window-body">
-        <h1 style="color: #6e4749; text-align: center;">Blog 2</h1>
-        <h3 style="padding: 15px;">
-          placeholder
-        </h3>
-     </div>
-    </div>
-
-  <script>
-    function openPopup(id) {
-        document.getElementById(id).style.display = "flex";
-    }
-    function closePopup(id) {
-        document.getElementById(id).style.display = "none";
-    }
-  
-    document.addEventListener("keydown", function(event) {
-              if (event.key === "Escape") {
-                  document.querySelectorAll(".popup").forEach(popup => {
-                      popup.style.display = "none";
-                  });
-              }
-          });
-          document.addEventListener("keydown", function(event) {
-            if (event.key === "Escape") {
-                document.querySelectorAll(".popup").forEach(popup => {
-                    closePopup(popup.id);
-                });
-            }
-        });
-
-
-
-  </script>
   </body>
 </html>

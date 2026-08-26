@@ -1,0 +1,49 @@
+<!--
+  BLOG POST TEMPLATE
+  -------------------
+  To add a new post:
+    1. Copy this file and rename it, e.g. post-2.html
+    2. Edit the <title>, POST_TITLE, POST_SUBTITLE and the body text/images below
+    3. Link to it from index.html: <a href="posts/post-2.html">Blog Post 2</a>
+  All paths below assume this file lives in a "posts/" folder next to
+  "css/" and "images/" (one level up, hence the ../ prefixes).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>POST_TITLE — Art 108.blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+<body class="post-page">
+
+  <div class="post-window">
+    <div class="title-bar">
+      <div class="title-bar-text">POST_TITLE</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" class="back-link" onclick="location.href='../index.html'"></button>
+      </div>
+    </div>
+
+    <div class="popup-window-body">
+      <h1 style="color: #6e4749; text-align: center;">
+        POST_TITLE
+        <br> POST_SUBTITLE
+      </h1>
+      <h3 style="padding: 15px;">
+        Write your blog post text here. You can break it into multiple
+        paragraphs and drop images in wherever you like, the same way the
+        original popup content did.
+        <img src="../images/example.png" alt="">
+        <br>
+        More paragraph text goes here.
+      </h3>
+    </div>
+  </div>
+
+</body>
+</html>

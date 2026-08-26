@@ -1,0 +1,27 @@
+/* post.css
+   Additive-only styles for standalone blog post pages.
+   style1.css is untouched — this file just re-centers the
+   "window" box on its own page and lets it scroll normally. */
+
+body.post-page {
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100%;
+  padding: 60px 20px;
+}
+
+.post-window {
+  background: rgb(204, 203, 203);
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  padding: 3px;
+  width: 40%;
+  min-width: 320px;
+  max-width: 700px;
+}
+
+.back-link {
+  cursor: url("../images/CursorStawberry1.png"), auto;
+}
